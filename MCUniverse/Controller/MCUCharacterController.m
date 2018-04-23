@@ -31,8 +31,8 @@ static NSString * const reuseIdentifier = @"MCUCharacterCell";
     
     NSTimeInterval timeStamp = [[NSDate date] timeIntervalSince1970];
     NSNumber *timeStampObj = [NSNumber numberWithDouble: timeStamp];
-    NSString *PUBLIC_KEY = @"e5510da9c5d3c12104e53f189ecb6918";
-    NSString *PRIVATE_KEY = @"2873d4d9f709e12885598b0d58f72061e19d3112";
+    NSString *PUBLIC_KEY = @"PUBLICKEY";
+    NSString *PRIVATE_KEY = @"PRIVATEKEY";
     NSString *myDigestString = [NSString stringWithFormat:@"%@%@%@", timeStampObj, PRIVATE_KEY , PUBLIC_KEY];
     NSString *hash = [myDigestString MD5];
 
